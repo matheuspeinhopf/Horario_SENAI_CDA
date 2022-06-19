@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Example</title>
+<script>
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+window.onload = timedRefresh(160000);
+
+
+</script>
+</head>
+<body>
+<script>
+ const time = new Date().getHours();
+let greeting;
+ 
+function hora(){
+ 
+ 
+if (time <= 11) {
+    document.getElementById("id_do_iframe").src = src= "https://docs.google.com/presentation/d/e/2PACX-1vSm0KE-qRx2f9wvVR8knxOO51gCbn-si_5SdrFMIZ6hcjb8_8EoBw9-9nsBgRZhDA/embed?start=true&loop=true&delayms=3000"; 
+  
+ }
+else if (time <= 15) {
+    document.getElementById("id_do_iframe").src = src= "https://docs.google.com/presentation/d/e/2PACX-1vRi4JlVIcwMrNrC0yTwH5yVtSFN48uXPE3fJ8Zln3GYGI7Hf5hYCXxt7FaNbE--Hg/embed?start=true&loop=true&delayms=3000";
+
+}
+else {
+    document.getElementById("id_do_iframe").src = src= "https://docs.google.com/presentation/d/e/2PACX-1vRde5nxyOe0oXylIKtaBy4AvMJfus2lyk9uSfSyHDH73wT4QQKUPwhvJtQ0-ZXTyA/embed?start=true&loop=true&delayms=3000";
+
+	}
+}
+window.onload = hora;
+
+</script> 
+<iframe  id="id_do_iframe" scrolling="auto" src="" frameborder="0" width="1313" height="768" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>  
+  
+</body>
+</html>
